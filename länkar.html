@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Länkar - Rönnes Filmklubb</title>
+    <!-- Google Fonts - Signika -->
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Lobster -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set Signika for the entire body */
+        body {
+            font-family: 'Signika', sans-serif;
+        }
+
+        /* Custom style for the hero section heading */
+        #heroSection h1 {
+            font-family: 'Lobster', cursive;
+        }
+
+        /* Custom styles for the hamburger icon */
+        .hamburger-menu span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #C2E0C4; /* Accent light green for hamburger lines */
+            margin: 5px 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Animation for the first bar of the hamburger icon */
+        .hamburger-menu.open span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        /* Animation for the middle bar (fades out) */
+        .hamburger-menu.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        /* Animation for the third bar */
+        .hamburger-menu.open span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* Base style for the hero section background */
+        #heroSection {
+            background-image: url(https://raw.githubusercontent.com/Ash15092020/Hemsida/refs/heads/main/Gemini_Generated_Image_xjkrg1xjkrg1xjkr.png);
+            background-size: cover;
+            background-position: center;
+            background-color: transparent; /* Ensure background color doesn't hide the image */
+        }
+
+        /* A simple animation for the link cards on hover */
+        .link-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-emerald-50">
+
+    <header class="bg-[#3B6B4C] shadow-md p-4 md:px-6 lg:px-8 flex justify-between items-center relative">
+        <!-- Logo Section -->
+        <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-[#C2E0C4]">
+                <!-- Ersätt den här raden med din riktiga logotypbild. -->
+                <img src="https://placehold.co/120x40/3B6B4C/C2E0C4?text=LOGO" alt="Company Logo" class="h-10 rounded">
+            </a>
+        </div>
+
+        <!-- Navigation Menu (Hamburger always visible) -->
+        <nav>
+            <button id="hamburgerBtn" class="hamburger-menu p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C2E0C4]">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+<!-- ... Resten av koden är oförändrad ... -->
