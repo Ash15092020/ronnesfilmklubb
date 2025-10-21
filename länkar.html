@@ -80,4 +80,151 @@
                 <span></span>
             </button>
         </nav>
-<!-- ... Resten av koden är oförändrad ... -->
+
+        <!-- Mobile Menu Dropdown (appears as a compact menu) -->
+        <div id="mobileMenu" class="hidden absolute top-full right-0 mt-2 w-48 bg-[#3B6B4C] shadow-lg rounded-md p-4 flex-col space-y-2 z-50">
+            <a href="#hem" class="text-[#C2E0C4] text-lg font-bold py-2 hover:text-[#4A8B5B] transition duration-200 ease-in-out block" onclick="closeMobileMenu()">Hem</a>
+            <a href="#filmklubb" class="text-[#C2E0C4] text-lg font-bold py-2 hover:text-[#4A8B5B] transition duration-200 ease-in-out block" onclick="closeMobileMenu()">Filmklubb</a>
+            <a href="https://ash15092020.github.io/ronnesfilmklubb/blogg.html" class="text-[#C2E0C4] text-lg font-bold py-2 hover:text-[#4A8B5B] transition duration-200 ease-in-out block" onclick="closeMobileMenu()">Blogg</a>
+            <a href="#lankar" class="text-[#C2E0C4] text-lg font-bold py-2 hover:text-[#4A8B5B] transition duration-200 ease-in-out block" onclick="closeMobileMenu()">Länkar</a>
+            <a href="#om" class="text-[#C2E0C4] text-lg font-bold py-2 hover:text-[#4A8B5B] transition duration-200 ease-in-out block" onclick="closeMobileMenu()">Om</a>
+            <a href="#kontakt" class="text-[#C2E0C4] text-lg font-bold py-2 hover:text-[#4A8B5B] transition duration-200 ease-in-out block" onclick="closeMobileMenu()">Kontakt</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="heroSection" class="relative w-full h-[400px] flex items-center justify-center text-center text-white rounded-b-lg">
+        <!-- Overlay for text readability -->
+        <div class="absolute inset-0 bg-black opacity-40 rounded-b-lg"></div>
+        <div class="relative z-10 p-6 max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg text-[#C2E0C4]">Länkar till Filmklubben</h1>
+            <p class="text-lg md:text-xl font-medium drop-shadow-lg text-gray-200">
+                Här hittar du webbplatser och sociala medier från andra medlemmar.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Main Content Area - Links Section -->
+    <main class="p-6 md:p-10 lg:p-12 mx-auto max-w-7xl">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-[#3B6B4C]">
+                Medlemmarnas webbplatser
+            </h2>
+            <p class="text-md md:text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                Klicka på korten nedan för att besöka webbplatserna som skapats av de andra medlemmarna i filmklubben!
+            </p>
+        </div>
+
+        <!-- Links Layout: 2-2-1 Pattern -->
+        <div class="space-y-6">
+
+            <!-- ROW 1: 2 Cards -->
+            <div class="flex flex-wrap justify-center gap-6">
+                
+                <!-- Card 1 -->
+                <a href="https://example.com/pelle" target="_blank" class="link-card block w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(50%-0.75rem)] p-6 bg-[#C2E0C4] text-[#3B6B4C] rounded-xl shadow-lg transition-transform duration-300 ease-in-out min-h-48">
+                    <h3 class="text-2xl font-bold mb-2">Pelles filmrecensioner</h3>
+                    <p class="text-base leading-relaxed">Pelles personliga blogg där han recenserar nya filmer och delar sina tankar.</p>
+                </a>
+                
+                <!-- Card 2 -->
+                <a href="https://example.com/anna" target="_blank" class="link-card block w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(50%-0.75rem)] p-6 bg-[#C2E0C4] text-[#3B6B4C] rounded-xl shadow-lg transition-transform duration-300 ease-in-out min-h-48">
+                    <h3 class="text-2xl font-bold mb-2">Annas favoritfilmer</h3>
+                    <p class="text-base leading-relaxed">Annas webbplats med en lista över hennes absoluta favoritfilmer genom tiderna.</p>
+                </a>
+            </div>
+
+            <!-- ROW 2: 2 Cards -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Card 3 -->
+                <a href="https://example.com/erik" target="_blank" class="link-card block w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(50%-0.75rem)] p-6 bg-[#C2E0C4] text-[#3B6B4C] rounded-xl shadow-lg transition-transform duration-300 ease-in-out min-h-48">
+                    <h3 class="text-2xl font-bold mb-2">Eriks filmhistorie-sida</h3>
+                    <p class="text-base leading-relaxed">En detaljerad guide till filmens historia, skapad av Erik.</p>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="https://example.com/sofia" target="_blank" class="link-card block w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(50%-0.75rem)] p-6 bg-[#C2E0C4] text-[#3B6B4C] rounded-xl shadow-lg transition-transform duration-300 ease-in-out min-h-48">
+                    <h3 class="text-2xl font-bold mb-2">Sofias filmtips</h3>
+                    <p class="text-base leading-relaxed">Sofias tips för nya filmer och tv-serier att titta på varje vecka.</p>
+                </a>
+            </div>
+            
+            <!-- ROW 3: 1 Card (Centered) -->
+            <div class="flex justify-center">
+                <!-- Card 5 -->
+                <a href="https://example.com/gustav" target="_blank" class="link-card block w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(50%-0.75rem)] p-6 bg-[#C2E0C4] text-[#3B6B4C] rounded-xl shadow-lg transition-transform duration-300 ease-in-out min-h-48">
+                    <h3 class="text-2xl font-bold mb-2">Gustavs filmtips</h3>
+                    <p class="text-base leading-relaxed">Gustavs rekommendationer för filmer från alla genrer.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- New Footer Design -->
+    <footer class="bg-[#3B6B4C] text-[#C2E0C4] p-8 mt-16 shadow-inner">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+            <!-- About Section -->
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-2xl font-bold mb-4 text-white">Om oss</h3>
+                <p class="text-sm leading-relaxed">
+                    Vi är en filklubb som vill rekomendera filmer till andra som också älskar filmer.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-2xl font-bold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="https://example.com/filmklubb" class="hover:underline transition-colors duration-200">Film Club</a></li>
+                    <li><a href="https://example.com/blogg" class="hover:underline transition-colors duration-200">Blog</a></li>
+                    <li><a href="https://example.com/lankar" class="hover:underline transition-colors duration-200">Links</a></li>
+                    <li><a href="https://example.com/om" class="hover:underline transition-colors duration-200">About</a></li>
+                    <li><a href="https://example.com/kontakt" class="hover:underline transition-colors duration-200">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-[#4A8B5B] text-center text-sm">
+            <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        // Function to toggle the mobile menu visibility
+        function toggleMobileMenu() {
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                hamburgerBtn.classList.add('open'); // For hamburger animation
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                hamburgerBtn.classList.remove('open'); // For hamburger animation
+            }
+        }
+
+        // Function to close the mobile menu (used when a link is clicked)
+        function closeMobileMenu() {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+            hamburgerBtn.classList.remove('open');
+        }
+
+        // Event listener to toggle the menu when the hamburger button is clicked
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', function(event) {
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickOnHamburger = hamburgerBtn.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnHamburger && !mobileMenu.classList.contains('hidden')) {
+                closeMobileMenu();
+            }
+        });
+    </script>
+</body>
+</html>
