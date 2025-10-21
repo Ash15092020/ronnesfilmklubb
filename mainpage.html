@@ -62,12 +62,14 @@
             background-color: #3B6B4C; /* Default background if no image uploaded */
         }
 
-        /* Base style for the reversed content fold image area - ADD YOUR IMAGE URL HERE */
+       /* Base style for the reversed content fold image area - ADD YOUR IMAGE URL HERE */
+        /* <<< NU ANVÄNDS 'CONTAIN' OCH 'NO-REPEAT' FÖR ATT VISA HELA BILDEN OCH FYLLA RESTEN MED BAKGRUNDSFÄRG >>> */
         #foldImageAreaReversed {
-            background-image: url('https://raw.githubusercontent.com/Ash15092020/ronnesfilmklubb/refs/heads/main/Filmklubb-Logga.png'); /* Updated placeholder */
-            background-size: cover;
+            background-image: url('https://raw.githubusercontent.com/Ash15092020/ronnesfilmklubb/refs/heads/main/Filmklubb-Logga.png'); 
+            background-size: contain; /* Visar hela bilden */
+            background-repeat: no-repeat; /* Förhindrar att bilden repeteras */
             background-position: center;
-            background-color: #3B6B4C; /* Default background if no image uploaded */
+            background-color: #0C1A25; /* Bakgrundsfärg fyller ut tomma ytor */
         }
 
         /* Styles for the new content row images */
